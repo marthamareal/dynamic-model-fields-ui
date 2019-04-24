@@ -1,0 +1,22 @@
+
+language: node_js
+
+node_js:
+  - stable
+
+cache:
+  directories:
+    - node_modules
+
+before_script:
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+
+script:
+  - yarn install
+  - yarn test
+ 
+after_success:
+  - ./cc-test-reporter format-coverage -t lcov -o coverage/codeclimate.frontend.json test/unit/coverage/lcov.info
+  - ./cc-test-reporter sum-coverage coverage/codeclimate.*.json -p 1
+  - ./cc-test-reporter upload-coverage

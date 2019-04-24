@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Content.vue should render as expected 1`] = `
+<div id="content" class="row">
+    <div class="row cards-container" id="risk-types">
+        <div id="card" class="col-md-4 mb-5">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h2 class="card-title">Professional liability insurance</h2>
+                    <p class="card-text">Professional liability insurance, also known</p>
+                </div>
+                <div class="card-footer"><button type="button" class="btn btn-primary">APPLY</button>
+                    <div>
+                        <div id="modal-10d98576-091f-4fb2-ad14-c40822748b51___BV_modal_outer_" style="position: absolute; z-index: 1040;">
+                            <div id="modal-10d98576-091f-4fb2-ad14-c40822748b51" role="dialog" tabindex="-1" aria-hidden="true" class="modal fade" style="display: none;">
+                                <div class="modal-dialog modal-md">
+                                    <div role="document" id="modal-10d98576-091f-4fb2-ad14-c40822748b51___BV_modal_content_" aria-labelledby="modal-10d98576-091f-4fb2-ad14-c40822748b51___BV_modal_header_" aria-describedby="modal-10d98576-091f-4fb2-ad14-c40822748b51___BV_modal_body_" class="modal-content">
+                                        <header id="modal-10d98576-091f-4fb2-ad14-c40822748b51___BV_modal_header_" class="modal-header">
+                                            <h5 class="modal-title">Professional liability insurance</h5><button type="button" aria-label="Close" class="close">×</button>
+                                        </header>
+                                        <div id="modal-10d98576-091f-4fb2-ad14-c40822748b51___BV_modal_body_" class="modal-body"> <button type="button" class="btn mt-3 btn-primary btn-secondary btn-block">SUBMIT</button></div>
+                                        <!---->
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                            <!---->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row align-self-center ">
+        <ul role="menubar" aria-disabled="false" aria-label="Pagination" class="pagination b-pagination pagination-md" items="[object Object]">
+            <li role="none presentation" aria-hidden="true" class="page-item disabled"><span role="menuitem" aria-label="Go to first page" aria-disabled="true" class="page-link">«</span></li>
+            <li role="none presentation" aria-hidden="true" class="page-item disabled"><span role="menuitem" aria-label="Go to previous page" aria-disabled="true" class="page-link">‹</span></li>
+            <!---->
+            <li role="none presentation" class="page-item active"><a role="menuitemradio" aria-label="Go to page 1" aria-checked="true" aria-posinset="1" aria-setsize="2" tabindex="0" target="_self" href="#" class="page-link">1</a></li>
+            <li role="none presentation" class="page-item"><a role="menuitemradio" aria-label="Go to page 2" aria-checked="false" aria-posinset="2" aria-setsize="2" tabindex="-1" target="_self" href="#" class="page-link">2</a></li>
+            <!---->
+            <li role="none presentation" class="page-item"><a role="menuitem" tabindex="-1" aria-label="Go to next page" target="_self" href="#" class="page-link">›</a></li>
+            <li role="none presentation" class="page-item"><a role="menuitem" tabindex="-1" aria-label="Go to last page" target="_self" href="#" class="page-link">»</a></li>
+        </ul>
+    </div>
+</div>
+`;
