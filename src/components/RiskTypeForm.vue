@@ -64,7 +64,7 @@ export default {
     }
   },
   async mounted () {
-    await axios.get('https://dynamic-model-fields.herokuapp.com/api/v1/field-types/')
+    await axios.get(`${process.env.BASE_API_URL}/field-types/`)
       .then(response => {
         let data = response.data
         this.fieldTypes = data.map(item => {
@@ -72,7 +72,8 @@ export default {
         })
       })
       .catch(response => {
-        this.handleCreateResponses('Sory', 'Unable to fetch field types, Please contact our support for help.', 'danger')
+        this.handleCreateResponses('Sory',
+          'Unable to fetch field types, Please check your internet connections or contact our support for help.', 'danger')
       })
   },
   methods: {
@@ -89,7 +90,7 @@ export default {
       evt.preventDefault()
       let formData = JSON.parse(JSON.stringify(this.form))
 
-      axios.post('https://dynamic-model-fields.herokuapp.com/api/v1/risk-types/', formData)
+      axios.post(`${process.env.BASE_API_URL}/risk-types/`, formData)
         .then(response => {
           if (response.status === 201) {
             this.handleCreateResponses('Congrats', 'You have successfully added a new risk type', 'success')

@@ -40,16 +40,16 @@ export default {
   },
   methods: {
     handleApiErrors () {
-      this.$bvToast.toast(` Unable to fetch risk types, Please contact our support for help.`, {
+      this.$bvToast.toast(` Unable to fetch risk types, Please check your internet connections or contact our support for help.`, {
         title: 'Sorry',
         toaster: 'b-toaster-top-center',
-        variant: 'info',
+        variant: 'danger',
         solid: true
       })
     },
     async pageChange (page) {
       this.currentPage = page
-      await axios.get(`https://dynamic-model-fields.herokuapp.com/api/v1/risk-types/?page=${page}`)
+      await axios.get(`${process.env.BASE_API_URL}/risk-types/?page=${page}`)
         .then(response => { this.riskTypes = response.data.results; this.totalItems = response.data.count })
         .catch(response => {
           this.handleApiErrors()
@@ -57,7 +57,7 @@ export default {
     }
   },
   async mounted () {
-    await axios.get('https://dynamic-model-fields.herokuapp.com/api/v1/risk-types/')
+    await axios.get(`${process.env.BASE_API_URL}/risk-types/`)
       .then(response => { this.riskTypes = response.data.results; this.totalItems = response.data.count })
       .catch(response => {
         this.handleApiErrors()
