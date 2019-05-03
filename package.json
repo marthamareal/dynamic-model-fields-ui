@@ -6,12 +6,13 @@
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
-    "start": "npm run dev",
+    "start": "node server.js",
     "unit": "jest --config test/unit/jest.conf.js -u --coverage",
     "e2e": "node test/e2e/runner.js",
     "test": "yarn run unit",
     "lint": "eslint --ext .js,.vue src test/unit test/e2e/specs",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "heroku-postbuild": "npm install --only=dev --no-shrinkwrap && npm run build"
   },
   "dependencies": {
     "@vue/test-utils": "^1.0.0-beta.29",
@@ -19,6 +20,7 @@
     "bootstrap": "^4.3.1",
     "bootstrap-vue": "^2.0.0-rc.19",
     "coveralls": "^3.0.3",
+    "express": "^4.16.4",
     "vue": "^2.6.10"
   },
   "devDependencies": {
