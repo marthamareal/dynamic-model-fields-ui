@@ -1,5 +1,4 @@
 import App from '@/App.vue';
-import Vue from 'vue';
 import { shallowMount } from '@vue/test-utils';
 
 describe('App.vue', () => {

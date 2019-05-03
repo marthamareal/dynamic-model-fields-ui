@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RiskTypeForm.vue should render as expected 1`] = `
+<b-modal id="modal-1" hide-footer="" title="Create Risk Type">
+    <b-form>
+        <b-form-group label="Name:">
+            <b-form-input type="text" required="" placeholder="Enter risk type name"></b-form-input>
+        </b-form-group>
+        <b-form-group label="Description:" description="Include all information about the policy">
+            <b-form-textarea required=""></b-form-textarea>
+        </b-form-group> <label>Fields</label>
+        <div class="card h-100">
+            <div class="card-body">
+                <b-form-group class="form-inline">
+                    <b-form-input type="text" required=""></b-form-input>
+                    <b-form-select id="input-3" options="[object Object]" required=""></b-form-select> <span><!----></span>
+                </b-form-group>
+                <div><img src="../assets/add-icon.png" class="add-button"> Add another field
+                </div>
+            </div>
+        </div>
+        <b-button block="" variant="primary" type="submit" class="mt-3 form">Submit</b-button>
+    </b-form>
+</b-modal>
+`;

@@ -1,7 +1,7 @@
-import { mount } from '@vue/test-utils';
+import { mount } from '@vue/test-utils'
 import Vue from 'vue';
 
-import Content from '@/components/Content.vue';
+import Content from '@/components/Content.vue'
 
 import BSpinner from 'bootstrap-vue/es/components/spinner/spinner'
 import BPagination from 'bootstrap-vue/es/components/pagination/pagination'
@@ -43,7 +43,7 @@ jest.mock('axios', () => ({
                 count: 7
             }
         }
-        return new Promise((resolve, reject) => resolve(response))
+        return new Promise((resolve, reject) => {resolve(response)})
     }
   }))
 
@@ -75,8 +75,8 @@ describe('Content.vue', () => {
         expect(wrapper.html()).toMatchSnapshot();
     })
     it('pagination changes should work as expected', () =>{
-        const linkWrapper = wrapper.findAll('.page-link').at(3);
-        const refWrapper = wrapper.findAll('.page-item').at(3);
+        const linkWrapper = wrapper.findAll('.page-link').at(3)
+        const refWrapper = wrapper.findAll('.page-item').at(3)
         expect(refWrapper.classes('active')).toBe(false)
         linkWrapper.trigger('click')
         expect(refWrapper.classes('active')).toBe(true)

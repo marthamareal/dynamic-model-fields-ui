@@ -44,7 +44,7 @@
         </div>
       </div>
     </div>
-    <b-button block variant="primary" class="mt-3" type="submit">Submit</b-button>
+    <b-button block variant="primary" class="mt-3 form" type="submit">Submit</b-button>
     </b-form>
   </b-modal>
 </template>
@@ -93,7 +93,6 @@ export default {
         .then(response => {
           if (response.status === 201) {
             this.handleCreateResponses('Congrats', 'You have successfully added a new risk type', 'success')
-            this.showModal = false
           } else {
             this.handleCreateResponses('Sory', 'Unable to create risk type, something went wrong at the server.', 'danger')
           }
