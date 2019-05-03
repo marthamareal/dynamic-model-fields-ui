@@ -3,31 +3,27 @@
 [![Test Coverage](https://api.codeclimate.com/v1/badges/75b2319a4d525c1525d4/test_coverage)](https://codeclimate.com/github/marthamareal/dynamic-model-fields-ui/test_coverage)
 
 # dynamic-model-fields-ui
-> A Vue.js project
+This project enables insurers to create risk types with custom fields of different types, For example Name, Address, Age, and so on. It is built using [VueJs](https://vuejs.org/) with [BootstrapVue](https://bootstrap-vue.js.org/) and its [API in](https://github.com/marthamareal/dynamic-model-fields) is built in Python/DJango. Check the hotsed app [here](https://dynamic-modal-fields-ui.herokuapp.com/).
 
-## Build Setup
+## Project Setup
+
+Clone the repository with:
+
+```
+$ git clone https://github.com/marthamareal/dynamic-model-fields-ui.git
+$ cd dynamic-model-fields-ui
+```
 
 ``` bash
 # install dependencies
-npm install
+yarn install
 
 # serve with hot reload at localhost:8080
-npm run dev
+yarn run dev
 
 # build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
+yarn build
 
 # run all tests
-npm test
+yarn test
 ```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
