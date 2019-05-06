@@ -1,0 +1,226 @@
+{
+    "count": 9,
+    "next": "http://127.0.0.1:8000/api/v1/risk-types/?page=2",
+    "previous": null,
+    "results": [
+        {
+            "id": "10d98576-091f-4fb2-ad14-c40822748b51",
+            "name": "Professional liability insurance",
+            "description": "Professional liability insurance, also known as errors and omissions (E&O) insurance, covers a business against negligence claims due to harm that results from mistakes or failure to perform.",
+            "fields": [
+                {
+                    "id": "4b9fbf08-dd06-4320-b409-dc469c6fcb32",
+                    "name": "date",
+                    "field_type": "date",
+                    "options": null
+                },
+                {
+                    "id": "483a996e-e603-4437-b689-99193383a7e8",
+                    "name": "name",
+                    "field_type": "text",
+                    "options": null
+                },
+                {
+                    "id": "4b9fbf08-dd06-4320-b409-dc469c6fcb33",
+                    "name": "email",
+                    "field_type": "email",
+                    "options": null
+                },
+                {
+                    "id": "4b9fbf08-dd06-4320-b409-dc469c6fcb35",
+                    "name": "City",
+                    "field_type": "text",
+                    "options": null
+                },
+                {
+                    "id": "4b9fbf08-dd06-4320-b409-dc469c6fcb37",
+                    "name": "Address",
+                    "field_type": "text",
+                    "options": null
+                }
+            ]
+        },
+        {
+            "id": "12bcf3dd-a23c-444e-81f1-2672d33b82e5",
+            "name": "Property insurance",
+            "description": "Whether a business owns or leases its space, property insurance is a must. This insurance covers equipment, signage, inventory and furniture in the event of a fire, storm or theft.",
+            "fields": [
+                {
+                    "id": "4b9fbf08-dd06-4320-b409-dc469c6fcb32",
+                    "name": "date",
+                    "field_type": "date",
+                    "options": null
+                },
+                {
+                    "id": "4b9fbf08-dd06-4320-b409-dc469c6fcb39",
+                    "name": "property size",
+                    "field_type": "text",
+                    "options": null
+                },
+                {
+                    "id": "4b9fbf08-dd06-4320-b409-dc469c6fcb33",
+                    "name": "email",
+                    "field_type": "email",
+                    "options": null
+                },
+                {
+                    "id": "4b9fbf08-dd06-4320-b409-dc469c6fcb35",
+                    "name": "City",
+                    "field_type": "text",
+                    "options": null
+                },
+                {
+                    "id": "4b9fbf08-dd06-4320-b409-dc469c6fcb37",
+                    "name": "Address",
+                    "field_type": "text",
+                    "options": null
+                }
+            ]
+        },
+        {
+            "id": "33d719cd-cde0-4164-9c60-bcf836205971",
+            "name": "Workers’ compensation insurance",
+            "description": "Once the first employee has been hired, workers’ compensation insurance should be added to a business’s insurance policy. This will cover medical treatment, disability and death benefits in the event an employee is injured or dies.",
+            "fields": [
+                {
+                    "id": "4b9fbf08-dd06-4320-b409-dc469c6fcb32",
+                    "name": "date",
+                    "field_type": "date",
+                    "options": null
+                },
+                {
+                    "id": "483a996e-e603-4437-b689-99193383a7e8",
+                    "name": "name",
+                    "field_type": "text",
+                    "options": null
+                },
+                {
+                    "id": "4b9fbf08-dd06-4320-b409-dc469c6fcb33",
+                    "name": "email",
+                    "field_type": "email",
+                    "options": null
+                },
+                {
+                    "id": "4b9fbf08-dd06-4320-b409-dc469c6fcb34",
+                    "name": "gender",
+                    "field_type": "select-one",
+                    "options": [
+                        "Male",
+                        "Female"
+                    ]
+                },
+                {
+                    "id": "4b9fbf08-dd06-4320-b409-dc469c6fcb36",
+                    "name": "Date of Birth",
+                    "field_type": "date",
+                    "options": null
+                },
+                {
+                    "id": "4b9fbf08-dd06-4320-b409-dc469c6fcb37",
+                    "name": "Address",
+                    "field_type": "text",
+                    "options": null
+                }
+            ]
+        },
+        {
+            "id": "33d719cd-cde0-4164-9c60-bcf836205978",
+            "name": "Home-based businesses",
+            "description": "Many professionals begin their small businesses in their own homes. Unfortunately, homeowner’s policies don’t cover home-based businesses in the way commercial property insurance does.",
+            "fields": [
+                {
+                    "id": "4b9fbf08-dd06-4320-b409-dc469c6fcb32",
+                    "name": "date",
+                    "field_type": "date",
+                    "options": null
+                },
+                {
+                    "id": "4b9fbf08-dd06-4320-b409-dc469c6fcb33",
+                    "name": "email",
+                    "field_type": "email",
+                    "options": null
+                },
+                {
+                    "id": "4b9fbf08-dd06-4320-b409-dc469c6fcb35",
+                    "name": "City",
+                    "field_type": "text",
+                    "options": null
+                },
+                {
+                    "id": "4b9fbf08-dd06-4320-b409-dc469c6fcb37",
+                    "name": "Address",
+                    "field_type": "text",
+                    "options": null
+                }
+            ]
+        },
+        {
+            "id": "33d719cd-cde0-4164-9c60-bcf836205976",
+            "name": "Vehicle insurance",
+            "description": "If company vehicles will be used, those vehicles should be fully insured to protect businesses against liability if an accident should occur. At the very least, businesses should insure against third-party injury, but comprehensive insurance will cover that vehicle in an accident, as well.",
+            "fields": [
+                {
+                    "id": "4b9fbf08-dd06-4320-b409-dc469c6fcb32",
+                    "name": "date",
+                    "field_type": "date",
+                    "options": null
+                },
+                {
+                    "id": "4b9fbf08-dd06-4320-b409-dc469c6fcb33",
+                    "name": "email",
+                    "field_type": "email",
+                    "options": null
+                },
+                {
+                    "id": "4b9fbf08-dd06-4320-b409-dc469c6fcb37",
+                    "name": "Address",
+                    "field_type": "text",
+                    "options": null
+                },
+                {
+                    "id": "4b9fbf08-dd06-4320-b409-dc469c6fcb38",
+                    "name": "Vehicle Type",
+                    "field_type": "text",
+                    "options": null
+                },
+                {
+                    "id": "4b9fbf08-dd06-4320-b409-dc469c6fcb35",
+                    "name": "City",
+                    "field_type": "text",
+                    "options": null
+                }
+            ]
+        },
+        {
+            "id": "33d719cd-cde0-4164-9c60-bcf836205977",
+            "name": "Group Life Insurance",
+            "description": "Group life insurance is mostly provided by an employer. It’s a term life insurance policy usually but sometimes it can be a whole policy too, depending on your company’s choice. Most people who get life insurance through work think that they have enough coverage to protect their family but most of the times, it’s actually not enough.",
+            "fields": [
+                {
+                    "id": "4b9fbf08-dd06-4320-b409-dc469c6fcb32",
+                    "name": "date",
+                    "field_type": "date",
+                    "options": null
+                },
+                {
+                    "id": "4b9fbf08-dd06-4320-b409-dc469c6fcb33",
+                    "name": "email",
+                    "field_type": "email",
+                    "options": null
+                },
+                {
+                    "id": "4b9fbf08-dd06-4320-b409-dc469c6fcb35",
+                    "name": "City",
+                    "field_type": "text",
+                    "options": null
+                },
+                {
+                    "id": "4b9fbf08-dd06-4320-b409-dc469c6fcb37",
+                    "name": "Address",
+                    "field_type": "text",
+                    "options": null
+                }
+            ]
+        }
+    ]
+}

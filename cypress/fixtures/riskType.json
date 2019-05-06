@@ -1,0 +1,19 @@
+{
+    "id": "2cb84fd1-e3e7-4308-8aa2-182f11a7bc67",
+    "name": "Prize Policy2",
+    "description": "This is my description feild which can not be empty",
+    "fields": [
+        {
+            "id": "4b9fbf08-dd06-4320-b409-dc469c6fcb32",
+            "name": "date",
+            "field_type": "date",
+            "options": null
+        },
+        {
+            "id": "483a996e-e603-4437-b689-99193383a7e8",
+            "name": "name",
+            "field_type": "text",
+            "options": null
+        }
+    ]
+}

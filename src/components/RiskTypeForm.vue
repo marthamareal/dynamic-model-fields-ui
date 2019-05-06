@@ -3,6 +3,7 @@
     <b-form @submit="onSubmit">
       <b-form-group label="Name:">
         <b-form-input
+          id="input-0"
           v-model="form.name"
           type="text"
           required
@@ -14,6 +15,7 @@
       label="Description:"
       description="Include all information about the policy" >
         <b-form-textarea
+          id="input-1"
           v-model="form.description"
           required
         ></b-form-textarea>
@@ -25,6 +27,7 @@
       <div class="card-body">
         <b-form-group class = "form-inline" v-for="(field, index) in form.fields" :key="index">
           <b-form-input
+            id="input-2"
             v-model="field.name"
             type="text"
             required
@@ -44,7 +47,7 @@
         </div>
       </div>
     </div>
-    <b-button block variant="primary" class="mt-3 form" type="submit">Submit</b-button>
+    <b-button block variant="primary" class="mt-3 form risk-type-form" type="submit">Submit</b-button>
     </b-form>
   </b-modal>
 </template>

@@ -6,7 +6,7 @@
   </div>
 
   <div class="row cards-container" id="risk-types" v-else >
-    <Card :riskType="riskType" v-for="riskType in riskTypes" :key="riskType.indexOf"/>
+    <Card :riskType="riskType" v-for="riskType in riskTypes" :key="riskType.id"/>
   </div>
   <div class="row align-self-center " v-if="riskTypes.length > 0" >
     <b-pagination

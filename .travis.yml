@@ -7,10 +7,13 @@ node_js:
 cache:
   directories:
     - node_modules
+    -  ~/.cache
 
 before_script:
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
   - chmod +x ./cc-test-reporter
+  - yarn add http-server
+  - yarn run dev & # start the development server in the background
 
 script:
   - yarn install

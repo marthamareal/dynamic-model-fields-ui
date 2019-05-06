@@ -8,7 +8,7 @@
       <div class="card-footer">
         <b-button v-b-modal= "id" variant="primary">APPLY</b-button>
           <b-modal :id="id" hide-footer :title="riskType.name" >
-            <Input :field="field" v-for="field in fields" :key="field.indexOf"/>
+            <Input :field="field" v-for="field in fields" :key="field.indexOf" :modalId="id"/>
             <b-button class="mt-3 btn-primary" block @click="handleSubmit">SUBMIT</b-button>
           </b-modal>
       </div>
