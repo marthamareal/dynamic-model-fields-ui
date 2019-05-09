@@ -24,11 +24,15 @@
 
 <script>
 import Input from './Input'
+import vBTooltip from 'bootstrap-vue/es/directives/tooltip/tooltip'
 
 export default {
   name: 'Card',
   components: {
     Input
+  },
+  directives: {
+    'b-tooltip': vBTooltip
   },
   props: {
     riskType: Object,
@@ -46,7 +50,8 @@ export default {
     }
   },
   methods: {
-    handleSubmit () {
+    handleSubmit (e) {
+      e.preventDefault()
       this.handleResponse('Sorry', 'This feature is not available.', 'info')
     },
     onDelete (riskTypeId) {

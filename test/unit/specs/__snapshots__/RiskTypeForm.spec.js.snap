@@ -1,25 +1,54 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`RiskTypeForm.vue should render as expected 1`] = `
-<b-modal id="modal-1" hide-footer="" title="Create Risk Type">
-    <b-form>
-        <b-form-group label="Name:">
-            <b-form-input type="text" required="" placeholder="Enter risk type name"></b-form-input>
-        </b-form-group>
-        <b-form-group label="Description:" description="Include all information about the policy">
-            <b-form-textarea required=""></b-form-textarea>
-        </b-form-group> <label>Fields</label>
-        <div class="card h-100">
-            <div class="card-body">
-                <b-form-group class="form-inline">
-                    <b-form-input type="text" required=""></b-form-input>
-                    <b-form-select id="input-3" options="[object Object]" required=""></b-form-select> <span><!----></span>
-                </b-form-group>
-                <div><img src="../assets/add-icon.png" class="add-button"> Add another field
+<div>
+    <div id="modal-1___BV_modal_outer_" style="position: absolute; z-index: 1040;">
+        <div id="modal-1" role="dialog" tabindex="-1" aria-hidden="true" class="modal fade" style="display: none;">
+            <div class="modal-dialog modal-md">
+                <div role="document" id="modal-1___BV_modal_content_" aria-labelledby="modal-1___BV_modal_header_" aria-describedby="modal-1___BV_modal_body_" class="modal-content">
+                    <header id="modal-1___BV_modal_header_" class="modal-header">
+                        <h5 class="modal-title">Create Risk Type</h5><button type="button" aria-label="Close" class="close">×</button>
+                    </header>
+                    <div id="modal-1___BV_modal_body_" class="modal-body">
+                        <form class="">
+                            <fieldset class="form-group" id="__BVID__5">
+                                <legend tabindex="-1" class="col-form-label pt-0" id="__BVID__5__BV_label_">Name:</legend>
+                                <div tabindex="-1" role="group"><input id="input-0" type="text" placeholder="Enter risk type name" required="required" aria-required="true" class="form-control">
+                                    <!---->
+                                    <!---->
+                                    <!---->
+                                </div>
+                            </fieldset>
+                            <fieldset class="form-group" id="__BVID__7" aria-describedby="__BVID__7__BV_description_">
+                                <legend tabindex="-1" class="col-form-label pt-0" id="__BVID__7__BV_label_">Description:</legend>
+                                <div tabindex="-1" role="group"><textarea id="input-1" required="required" rows="2" wrap="soft" aria-required="true" class="form-control"></textarea>
+                                    <!---->
+                                    <!----><small tabindex="-1" class="form-text text-muted" id="__BVID__7__BV_description_">Include all information about the policy</small></div>
+                            </fieldset> <label>Fields</label>
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <fieldset class="form-group form-inline" id="__BVID__9">
+                                        <!---->
+                                        <div tabindex="-1" role="group"><input id="input-2" type="text" required="required" aria-required="true" class="form-control"> <select id="input-3" required="required" aria-required="true" class="custom-select">
+                                                <option value="">type</option>
+                                            </select> <span><!----></span>
+                                            <!---->
+                                            <!---->
+                                            <!---->
+                                        </div>
+                                    </fieldset>
+                                    <div><img src="../assets/add-icon.png" class="add-button"> Add another field
+                                    </div>
+                                </div>
+                            </div> <button type="submit" class="btn mt-3 form risk-type-form btn-primary btn-block">Submit</button>
+                        </form>
+                    </div>
+                    <!---->
                 </div>
             </div>
         </div>
-        <b-button block="" variant="primary" type="submit" class="mt-3 form">Submit</b-button>
-    </b-form>
-</b-modal>
+        <!---->
+        <!---->
+    </div>
+</div>
 `;

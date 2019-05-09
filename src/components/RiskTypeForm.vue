@@ -54,11 +54,27 @@
 
 <script>
 import axios from 'axios'
+import BForm from 'bootstrap-vue/es/components/form/form'
+import BFormSelect from 'bootstrap-vue/es/components/form-select/form-select'
+import BModal from 'bootstrap-vue/es/components/modal/modal'
+import BFormGroup from 'bootstrap-vue/es/components/form-group/form-group'
+import BFormInput from 'bootstrap-vue/es/components/form-input/form-input'
+import BButton from 'bootstrap-vue/es/components/button/button'
+import BFormTextarea from 'bootstrap-vue/es/components/form-textarea/form-textarea'
 
 export default {
   name: 'RiskTypeForm',
   props: {
     onResponse: Function
+  },
+  components: {
+    'b-form': BForm,
+    'b-form-select': BFormSelect,
+    'b-modal': BModal,
+    'b-form-group': BFormGroup,
+    'b-form-input': BFormInput,
+    'b-button': BButton,
+    'b-form-textarea': BFormTextarea
   },
   data (props) {
     return {
@@ -89,7 +105,6 @@ export default {
     onSubmit (evt) {
       evt.preventDefault()
       let formData = JSON.parse(JSON.stringify(this.form))
-
       axios.post(`${process.env.BASE_API_URL}/risk-types/`, formData)
         .then(response => {
           if (response.status === 201) {

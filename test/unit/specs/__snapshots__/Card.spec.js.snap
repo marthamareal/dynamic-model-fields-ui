@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar.vue should render as expected 1`] = `
+<div id="card" class="col-md-4 mb-5">
+    <div class="card h-100 no-gh"><span aria-hidden="true" class="loader spinner-border text-success"><!----></span></div>
+    <div class="card h-100">
+        <div class="card-body">
+            <h2 class="card-title">Professional liability insurance</h2>
+            <p class="card-text">Professional liability insurance, also known</p>
+        </div>
+        <div class="card-footer"><img src="../assets/edit.png" title="" class="edit" data-original-title="edit"> <img src="../assets/delete.png" title="" class="delete" data-original-title="delete"> <button type="button" class="btn btn-primary">APPLY</button>
+            <div>
+                <div id="modal-10d98576-091f-4fb2-ad14-c40822748b51___BV_modal_outer_" style="position: absolute; z-index: 1040;">
+                    <div id="modal-10d98576-091f-4fb2-ad14-c40822748b51" role="dialog" tabindex="-1" aria-hidden="true" class="modal fade" style="display: none;">
+                        <div class="modal-dialog modal-md">
+                            <div role="document" id="modal-10d98576-091f-4fb2-ad14-c40822748b51___BV_modal_content_" aria-labelledby="modal-10d98576-091f-4fb2-ad14-c40822748b51___BV_modal_header_" aria-describedby="modal-10d98576-091f-4fb2-ad14-c40822748b51___BV_modal_body_" class="modal-content">
+                                <header id="modal-10d98576-091f-4fb2-ad14-c40822748b51___BV_modal_header_" class="modal-header">
+                                    <h5 class="modal-title">Professional liability insurance</h5><button type="button" aria-label="Close" class="close">×</button>
+                                </header>
+                                <div id="modal-10d98576-091f-4fb2-ad14-c40822748b51___BV_modal_body_" class="modal-body"> <button type="button" class="btn mt-3 btn-primary btn-secondary btn-block">SUBMIT</button></div>
+                                <!---->
+                            </div>
+                        </div>
+                    </div>
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+`;
