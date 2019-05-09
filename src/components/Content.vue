@@ -6,7 +6,13 @@
   </div>
 
   <div class="row cards-container" id="risk-types" v-else >
-    <Card :riskType="riskType" v-for="riskType in riskTypes" :key="riskType.indexOf"/>
+
+    <Card :riskType="riskType"
+    v-for="riskType in riskTypes"
+    :key="riskType.id"
+    :deleteRiskType="deleteRiskType"
+    :handleResponse="handleResponses"/>
+
   </div>
   <div class="row align-self-center " v-if="riskTypes.length > 0" >
     <b-pagination
@@ -39,20 +45,35 @@ export default {
     }
   },
   methods: {
-    handleApiErrors () {
-      this.$bvToast.toast(` Unable to fetch risk types, Please check your internet connections or contact our support for help.`, {
-        title: 'Sorry',
+    handleResponses (title, message, variant) {
+      this.$bvToast.toast(message, {
+        title: title,
         toaster: 'b-toaster-top-center',
-        variant: 'danger',
+        variant: variant,
         solid: true
       })
+    },
+    deleteRiskType (riskTypeId) {
+      axios.delete(`${process.env.BASE_API_URL}/risk-types/${riskTypeId}`)
+        .then(response => {
+          if (response.status === 200) {
+            this.handleResponses('Congrats', 'You have successfully deleted risk type', 'success')
+            this.riskTypes = this.riskTypes.filter(risk => risk.id !== riskTypeId)
+            this.riskTypes.length > 0 ? this.pageChange(this.currentPage) : this.pageChange(this.currentPage - 1)
+          } else {
+            this.handleResponses('Sory', 'Unable to delete risk type, something went wrong at the server.', 'danger')
+          }
+        })
+        .catch(response => {
+          this.handleResponses('Oops!!', 'Something wrong has happened, Please contact our support for help.', 'danger')
+        })
     },
     async pageChange (page) {
       this.currentPage = page
       await axios.get(`${process.env.BASE_API_URL}/risk-types/?page=${page}`)
         .then(response => { this.riskTypes = response.data.results; this.totalItems = response.data.count })
         .catch(response => {
-          this.handleApiErrors()
+          this.handleResponses('Sorry', 'Unable to fetch risk types, Please check your internet connections or contact our support for help.', 'danger')
         })
     }
   },
@@ -60,7 +81,7 @@ export default {
     await axios.get(`${process.env.BASE_API_URL}/risk-types/`)
       .then(response => { this.riskTypes = response.data.results; this.totalItems = response.data.count })
       .catch(response => {
-        this.handleApiErrors()
+        this.handleResponses('Sorry', 'Unable to fetch risk types, Please check your internet connections or contact our support for help.', 'danger')
       })
   }
 }

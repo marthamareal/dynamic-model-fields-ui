@@ -1,0 +1,130 @@
+{
+    "count": 9,
+    "next": null,
+    "previous": "http://127.0.0.1:8000/api/v1/risk-types/",
+    "results": [
+        {
+            "id": "33d719cd-cde0-4164-9c60-bcf836205985",
+            "name": "No Exam Life Insurance",
+            "description": "A no exam life insurance policy is offered without going through the hassle of a paramedical exam. If you have certain health issues like high blood pressure, high cholesterol then going for a no exam policy seems a wise decision.",
+            "fields": [
+                {
+                    "id": "4b9fbf08-dd06-4320-b409-dc469c6fcb31",
+                    "name": "Age",
+                    "field_type": "number",
+                    "options": null
+                },
+                {
+                    "id": "4b9fbf08-dd06-4320-b409-dc469c6fcb32",
+                    "name": "date",
+                    "field_type": "date",
+                    "options": null
+                },
+                {
+                    "id": "483a996e-e603-4437-b689-99193383a7e8",
+                    "name": "name",
+                    "field_type": "text",
+                    "options": null
+                },
+                {
+                    "id": "4b9fbf08-dd06-4320-b409-dc469c6fcb33",
+                    "name": "email",
+                    "field_type": "email",
+                    "options": null
+                },
+                {
+                    "id": "4b9fbf08-dd06-4320-b409-dc469c6fcb34",
+                    "name": "gender",
+                    "field_type": "select-one",
+                    "options": [
+                        "Male",
+                        "Female"
+                    ]
+                },
+                {
+                    "id": "4b9fbf08-dd06-4320-b409-dc469c6fcb36",
+                    "name": "Date of Birth",
+                    "field_type": "date",
+                    "options": null
+                },
+                {
+                    "id": "4b9fbf08-dd06-4320-b409-dc469c6fcb37",
+                    "name": "Address",
+                    "field_type": "text",
+                    "options": null
+                }
+            ]
+        },
+        {
+            "id": "33d719cd-cde0-4164-9c60-bcf836205986",
+            "name": "Final Expense Insurance",
+            "description": "A life insurance policy that is specifically designed to cover funeral costs, burial costs and late in life medical expenses. It resembles simplified life insurance in a way that it does not involve any medical exam although there is a health questionnaire that you have to fill. If you don’t pass that questionnaire you will be issued a guaranteed acceptance life insurance policy instead. Also, final expense life insurance policy is only issued to people with a certain age.",
+            "fields": [
+                {
+                    "id": "4b9fbf08-dd06-4320-b409-dc469c6fcb31",
+                    "name": "Age",
+                    "field_type": "number",
+                    "options": null
+                },
+                {
+                    "id": "4b9fbf08-dd06-4320-b409-dc469c6fcb32",
+                    "name": "date",
+                    "field_type": "date",
+                    "options": null
+                },
+                {
+                    "id": "483a996e-e603-4437-b689-99193383a7e8",
+                    "name": "name",
+                    "field_type": "text",
+                    "options": null
+                },
+                {
+                    "id": "4b9fbf08-dd06-4320-b409-dc469c6fcb33",
+                    "name": "email",
+                    "field_type": "email",
+                    "options": null
+                },
+                {
+                    "id": "4b9fbf08-dd06-4320-b409-dc469c6fcb34",
+                    "name": "gender",
+                    "field_type": "select-one",
+                    "options": [
+                        "Male",
+                        "Female"
+                    ]
+                },
+                {
+                    "id": "4b9fbf08-dd06-4320-b409-dc469c6fcb36",
+                    "name": "Date of Birth",
+                    "field_type": "date",
+                    "options": null
+                },
+                {
+                    "id": "4b9fbf08-dd06-4320-b409-dc469c6fcb37",
+                    "name": "Address",
+                    "field_type": "text",
+                    "options": null
+                }
+            ]
+        },
+        {
+            "id": "33d719cd-cde0-4164-9c60-bcf836205988",
+            "name": "Indexed Universal Life Insurance",
+            "description": "It’s an insurance policy that is tied to a stock market index such as the S&P 500. The premiums are placed in a general account. Now the policyholder has an opportunity to allocate his funds either to a fixed account or to one of the indexed accounts.Each account has a guaranteed floor that protects you against market losses. This protection is available since you are not investing directly in the market.",
+            "fields": [
+                {
+                    "id": "4b9fbf08-dd06-4320-b409-dc469c6fcb31",
+                    "name": "Age",
+                    "field_type": "number",
+                    "options": null
+                },
+                {
+                    "id": "4b9fbf08-dd06-4320-b409-dc469c6fcb32",
+                    "name": "date",
+                    "field_type": "date",
+                    "options": null
+                }
+            ]
+        }
+    ]
+}

@@ -5,12 +5,12 @@
   <!-- Check if typoe is select or not -->
     <div v-if="field.field_type === 'select-one'">
       <b-form-group v-for="(option, index) in field.options" :key="index" class="form-check form-check-inline">
-      <b-form-radio name="some-radios" value="A">{{option}}</b-form-radio>
-    </b-form-group>
+        <b-form-radio name="some-radios" value="A">{{option}}</b-form-radio>
+      </b-form-group>
     </div>
     <div v-else>
       <b-form-input
-        id="input-live"
+        :id="modalId"
         :type="field.field_type"
         trim
       ></b-form-input>
@@ -24,7 +24,8 @@
 export default {
   name: 'Input',
   props: {
-    field: Object
+    field: Object,
+    modalId: String
   },
   data (props) {
     return { name: props.field.name.charAt(0).toUpperCase() + props.field.name.slice(1) }
