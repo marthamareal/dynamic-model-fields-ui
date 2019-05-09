@@ -31,12 +31,25 @@
 </template>
 
 <script>
+import BNav from 'bootstrap-vue/es/components/nav/nav-form'
+import BForm from 'bootstrap-vue/es/components/form/form'
+import BFormInput from 'bootstrap-vue/es/components/form-input/form-input'
+import BButton from 'bootstrap-vue/es/components/button/button'
+import vBModal from 'bootstrap-vue/es/directives/modal/modal'
+
 import RiskTypeForm from './RiskTypeForm'
 
 export default {
   name: 'Navbar',
   components: {
-    RiskTypeForm
+    'risk-type-form': RiskTypeForm,
+    'b-form-input': BFormInput,
+    'b-button': BButton,
+    'b-nav-form': BNav,
+    'b-form': BForm
+  },
+  directives: {
+    'b-modal': vBModal
   },
   props: {
     onResponse: Function

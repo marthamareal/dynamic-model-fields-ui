@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Navbar from '@/components/Navbar'
-import { mount } from '../../../node_modules/@vue/test-utils';
+import { mount } from '../../../node_modules/@vue/test-utils'
 
 describe('Navbar.vue', () => {
   const wrapper = mount(Navbar)

@@ -3,9 +3,7 @@
 exports[`Input.vue should render as expected 1`] = `
 <form class="form-group">
     <div role="group"><label for="input-live"><strong>Date</strong></label>
-        <div>
-            <b-form-input type="date" trim=""></b-form-input>
-        </div>
+        <div><input name="date" type="date" class="form-control" id="__BVID__2"></div>
     </div>
 </form>
 `;

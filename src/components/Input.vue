@@ -10,6 +10,7 @@
     </div>
     <div v-else>
       <b-form-input
+        :name="field.name"
         :id="modalId"
         :type="field.field_type"
         trim
@@ -21,11 +22,16 @@
 </template>
 
 <script>
+import BFormInput from 'bootstrap-vue/es/components/form-input/form-input'
+
 export default {
   name: 'Input',
   props: {
     field: Object,
     modalId: String
+  },
+  components: {
+    'b-form-input': BFormInput
   },
   data (props) {
     return { name: props.field.name.charAt(0).toUpperCase() + props.field.name.slice(1) }
