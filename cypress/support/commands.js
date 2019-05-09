@@ -35,5 +35,11 @@ Cypress.Commands.add('loadRiskTypes', () => {
         url: '/api/v1/risk-types/',
         response: 'fixture:riskType.json',
         status: 201,
-    }).as('createRiskType')
+    }).as('createRiskType'),
+    cy.route({
+        method: 'DELETE',
+        url: '/api/v1/risk-types/*',
+        response: {},
+        status: 200,
+    }).as('DeleteRiskType')
 })

@@ -45,5 +45,17 @@ describe('Content.vue', () => {
         cy.get('.card-title').should('have.length', 3)
     })
 
+    it('should delete risk type', () => {
+        cy.get('.cards-container .card')
+        .get('.card-footer img').eq(7)
+        .invoke('show')
+        .click()
+    })
+
+    it('should edit risk type', () => {
+        cy.get('.cards-container .card')
+        .get('.card-footer img').eq(6)
+        .invoke('show')
+        .click()
+    })
  })
- 
