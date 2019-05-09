@@ -56,14 +56,19 @@
 import axios from 'axios'
 
 export default {
-  data () {
+  name: 'RiskTypeForm',
+  props: {
+    onResponse: Function
+  },
+  data (props) {
     return {
       form: {
         name: '',
         description: '',
         fields: [{name: 'date', field_type: 'date'}]
       },
-      fieldTypes: [{ text: 'type', value: null }]
+      fieldTypes: [{ text: 'type', value: null }],
+      handleResponses: props.onResponse
     }
   },
   async mounted () {
@@ -75,19 +80,11 @@ export default {
         })
       })
       .catch(response => {
-        this.handleCreateResponses('Sory',
+        this.handleResponses('Sory',
           'Unable to fetch field types, Please check your internet connections or contact our support for help.', 'danger')
       })
   },
   methods: {
-    handleCreateResponses (title, message, variant) {
-      this.$bvToast.toast(message, {
-        title: title,
-        toaster: 'b-toaster-top-center',
-        variant: variant,
-        solid: true
-      })
-    },
 
     onSubmit (evt) {
       evt.preventDefault()
@@ -96,13 +93,13 @@ export default {
       axios.post(`${process.env.BASE_API_URL}/risk-types/`, formData)
         .then(response => {
           if (response.status === 201) {
-            this.handleCreateResponses('Congrats', 'You have successfully added a new risk type', 'success')
+            this.handleResponses('Congrats', 'You have successfully added a new risk type', 'success')
           } else {
-            this.handleCreateResponses('Sory', 'Unable to create risk type, something went wrong at the server.', 'danger')
+            this.handleResponses('Sory', 'Unable to create risk type, something went wrong at the server.', 'danger')
           }
         })
         .catch(response => {
-          this.handleCreateResponses('Oops!!', 'Something wrong has happened, Please contact our support for help.', 'danger')
+          this.handleResponses('Oops!!', 'Something wrong has happened, Please contact our support for help.', 'danger')
         })
       document.querySelector('.close').click()
     },

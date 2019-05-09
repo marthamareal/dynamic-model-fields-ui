@@ -33,14 +33,14 @@ export default {
   props: {
     riskType: Object,
     deleteRiskType: Function,
-    handleResponse: Function
+    onResponse: Function
   },
   data (props) {
-    console.log(this.isLoading)
     return {
       id: `modal-${props.riskType.id}`,
       fields: props.riskType.fields,
       deleteType: props.deleteRiskType,
+      handleResponse: props.onResponse,
       contentClass: 'card h-100',
       ghostLoad: 'card h-100 no-gh'
     }
@@ -69,11 +69,11 @@ export default {
   top: -310px;
 }
 .no-gh {
-  display: none;
+  display: none!important;
 }
 .ghost-load {
   position: relative;
-  background-color: #e9ecefc7;
+  background-color: #e9ecefc7!important;
 }
 .loader {
   position: relative;
@@ -88,6 +88,7 @@ export default {
   color: #e8eaee;
   font-weight: 500;
   background-color: #35495e!important;
+  border-color: #7d7f827d !important;
   border: 1px solid #7d7f827d;
   border-radius: 2px;
   float: right;
@@ -123,7 +124,9 @@ export default {
 .card:hover .card-footer img {
 display: inline!important;
 }
-
+#card {
+  max-height: 310px!important;
+}
 .card-footer img:hoover {
   box-shadow: 0em 0em 0.5em #3b3b3b7d;
   transition: box-shadow 0.6s;

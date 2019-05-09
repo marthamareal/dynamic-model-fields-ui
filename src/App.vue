@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-  <app-header></app-header>
-  <app-content></app-content>
-  <app-footer></app-footer>
+  <app-header :onResponse="handleResponses"/>
+  <app-content :onResponse="handleResponses"/>
+  <app-footer/>
   </div>
 </template>
 
@@ -17,6 +17,16 @@ export default {
     'app-header': Navbar,
     'app-content': Content,
     'app-footer': Footer
+  },
+  methods: {
+    handleResponses (title, message, variant) {
+      this.$bvToast.toast(message, {
+        title: title,
+        toaster: 'b-toaster-top-center',
+        variant: variant,
+        solid: true
+      })
+    }
   }
 }
 </script>

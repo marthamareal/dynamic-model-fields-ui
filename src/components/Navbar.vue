@@ -23,7 +23,9 @@
       </div>
     </div>
 
-    <risk-type-form id="modal-1"/>
+    <risk-type-form
+    :onResponse="handleResponses"
+    id="modal-1"/>
   </nav>
 
 </template>
@@ -36,14 +38,17 @@ export default {
   components: {
     RiskTypeForm
   },
+  props: {
+    onResponse: Function
+  },
+  data (props) {
+    return {
+      handleResponses: props.onResponse
+    }
+  },
   methods: {
     handleSearch () {
-      this.$bvToast.toast(`This feature is not available.`, {
-        title: 'Sorry',
-        toaster: 'b-toaster-top-center',
-        variant: 'info',
-        solid: true
-      })
+      this.handleResponses('Sorry', 'This feature is not available.', 'info')
     }
   }
 }

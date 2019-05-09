@@ -11,7 +11,7 @@
     v-for="riskType in riskTypes"
     :key="riskType.id"
     :deleteRiskType="deleteRiskType"
-    :handleResponse="handleResponses"/>
+    :onResponse="handleResponses"/>
 
   </div>
   <div class="row align-self-center " v-if="riskTypes.length > 0" >
@@ -36,23 +36,19 @@ export default {
   components: {
     Card
   },
-  data () {
+  props: {
+    onResponse: Function
+  },
+  data (props) {
     return {
       perPage: 6,
       currentPage: 1,
       riskTypes: [],
-      totalItems: null
+      totalItems: null,
+      handleResponses: props.onResponse
     }
   },
   methods: {
-    handleResponses (title, message, variant) {
-      this.$bvToast.toast(message, {
-        title: title,
-        toaster: 'b-toaster-top-center',
-        variant: variant,
-        solid: true
-      })
-    },
     deleteRiskType (riskTypeId) {
       axios.delete(`${process.env.BASE_API_URL}/risk-types/${riskTypeId}`)
         .then(response => {
